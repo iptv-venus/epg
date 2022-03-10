@@ -1,8 +1,0 @@
-<tv>
-  <channel id="Indosiar.id">
-    <display-name>Indosiar</display-name>
-    <url>https://vidio.com</url>
-  </channel>
- <programme start="20220125113000 +0000" stop="20220125133000 +0000" channel="Indosiar.id"><title lang="id">Suara Hati Istri Premiere</title></programme>
-  // ...
-</tv>
