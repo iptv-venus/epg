@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<site site="example.com">
+  <channels>
+    <channel site_id="205" xmltv_id="Indosiar.id">Indosiar</channel>
+  </channels>
+</site>
