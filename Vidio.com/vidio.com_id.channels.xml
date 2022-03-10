@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V3.2.0.0 -- Jan van Straaten" site="vidio.com">
+<site site="vidio.com">
   <channels>
     <channel update="i" site="vidio.com" site_id="1561" xmltv_id="RTV.COCO">RTV</channel>
     <channel update="i" site="vidio.com" site_id="206" xmltv_id="Ochannel.COCO">Ochannel</channel>
@@ -17,78 +17,5 @@
     <channel update="i" site="vidio.com" site_id="6587" xmltv_id="Citra Dangdut.COCO">Citra Dangdut</channel>
     <channel update="i" site="vidio.com" site_id="6402" xmltv_id="Citra Entertainment.COCO">Citra Entertainment</channel>
     <channel update="i" site="vidio.com" site_id="8237" xmltv_id="Mentari TV.COCO">Mentari TV</channel>
-    <channel update="i" site="useetv.com" site_id="natgeo" xmltv_id="Nat Geo.COCO">Nat Geo</channel>
-    <channel update="i" site="useetv.com" site_id="natgeowild" xmltv_id="Nat Geo Wild.COCO">Nat Geo Wild</channel>
-    <channel update="i" site="useetv.com" site_id="disco" xmltv_id="Discovery Channel.COCO">Discovery Channel</channel>
-    <channel update="i" site="useetv.com" site_id="tvri" xmltv_id="TVRI.COCO">TVRI</channel>
-    <channel update="i" site="useetv.com" site_id="indosiar" xmltv_id="Indosiar.COCO">Indosiar</channel>
-    <channel update="i" site="useetv.com" site_id="kompastv" xmltv_id="Kompas TV.COCO">Kompas TV</channel>
-    <channel update="i" site="useetv.com" site_id="metrotv" xmltv_id="Metro TV.COCO">Metro TV</channel>
-    <channel update="i" site="useetv.com" site_id="net" xmltv_id="Net..COCO">Net.</channel>
-    <channel update="i" site="useetv.com" site_id="rtv" xmltv_id="Rajawali TV.COCO">Rajawali TV</channel>
-    <channel update="i" site="useetv.com" site_id="sctv" xmltv_id="SCTV.COCO">SCTV</channel>
-    <channel update="i" site="useetv.com" site_id="trans7" xmltv_id="Trans7.COCO">Trans7</channel>
-    <channel update="i" site="useetv.com" site_id="transtv" xmltv_id="TransTV.COCO">TransTV</channel>
-    <channel update="i" site="useetv.com" site_id="mncshop" xmltv_id="M Shop.COCO">M Shop</channel>
-    <channel update="i" site="useetv.com" site_id="dunialain" xmltv_id="Dunia Lain.COCO">Dunia Lain</channel>
-    <channel update="i" site="useetv.com" site_id="imc" xmltv_id="IMC.COCO">IMC</channel>
-    <channel update="i" site="useetv.com" site_id="paramount" xmltv_id="Paramount.COCO">Paramount</channel>
-    <channel update="i" site="useetv.com" site_id="myfamily" xmltv_id="My Family.COCO">My Family</channel>
-    <channel update="i" site="useetv.com" site_id="mycinemaasia" xmltv_id="My Cinema Asia.COCO">My Cinema Asia</channel>
-    <channel update="i" site="useetv.com" site_id="mycinema" xmltv_id="My Cinema.COCO">My Cinema</channel>
-    <channel update="i" site="useetv.com" site_id="jaktv" xmltv_id="JakTV.COCO">JakTV</channel>
-    <channel update="i" site="useetv.com" site_id="jtv" xmltv_id="JTV.COCO">JTV</channel>
-    <channel update="i" site="useetv.com" site_id="animax" xmltv_id="Animax.COCO">Animax</channel>
-    <channel update="i" site="useetv.com" site_id="bioskopindonesia" xmltv_id="Bioskop Indonesia.COCO">Bioskop Indonesia</channel>
-    <channel update="i" site="useetv.com" site_id="thrill" xmltv_id="Thrill.COCO">Thrill</channel>
-    <channel update="i" site="useetv.com" site_id="eatgo" xmltv_id="Eat &amp; Go.COCO">Eat &amp; Go</channel>
-    <channel update="i" site="useetv.com" site_id="flik" xmltv_id="Flik.COCO">Flik</channel>
-    <channel update="i" site="useetv.com" site_id="history" xmltv_id="History.COCO">History</channel>
-    <channel update="i" site="useetv.com" site_id="aniplus" xmltv_id="Aniplus.COCO">ANIPlus</channel>
-    <channel update="i" site="useetv.com" site_id="dreamworks" xmltv_id="Dreamworks.COCO">Dreamworks</channel>
-    <channel update="i" site="useetv.com" site_id="starchinesemovies" xmltv_id="Star Chinese Movies.COCO">Star Chinese Movies</channel>
-    <channel update="i" site="mncvision.id.E" site_id="6" xmltv_id="HBO Signature.COCO">HBO Signature</channel>
-    <channel update="i" site="mncvision.id.E" site_id="7" xmltv_id="HBO.COCO">HBO</channel>
-    <channel update="i" site="mncvision.id.E" site_id="8" xmltv_id="CINEMAX.COCO">CINEMAX</channel>
-    <channel update="i" site="mncvision.id.E" site_id="9" xmltv_id="HBO Family.COCO">HBO Family</channel>
-    <channel update="i" site="mncvision.id.E" site_id="10" xmltv_id="HBO Hits.COCO">HBO Hits</channel>
-    <channel update="i" site="mncvision.id.E" site_id="11" xmltv_id="HITS MOVIES.COCO">HITS MOVIES</channel>
-    <channel update="i" site="mncvision.id.E" site_id="12" xmltv_id="Galaxy Premium.COCO">Galaxy Premium</channel>
-    <channel update="i" site="mncvision.id.E" site_id="13" xmltv_id="Galaxy.COCO">Galaxy</channel>
-    <channel update="i" site="mncvision.id.E" site_id="14" xmltv_id="IMC.COCO">IMC</channel>
-    <channel update="i" site="mncvision.id.E" site_id="19" xmltv_id="Thrill.COCO">Thrill</channel>
-    <channel update="i" site="mncvision.id.E" site_id="25" xmltv_id="tvN Movies.COCO">tvN Movies</channel>
-    <channel update="i" site="mncvision.id.E" site_id="37" xmltv_id="Nickelodeon Jr.COCO">Nickelodeon Jr</channel>
-    <channel update="i" site="mncvision.id.E" site_id="39" xmltv_id="Boomerang.COCO">Boomerang</channel>
-    <channel update="i" site="mncvision.id.E" site_id="40" xmltv_id="BabyTV.COCO">BabyTV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="41" xmltv_id="CBeebies.COCO">CBeebies</channel>
-    <channel update="i" site="mncvision.id.E" site_id="46" xmltv_id="Kids TV.COCO">Kids TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="47" xmltv_id="Cartoon Network.COCO">Cartoon Network</channel>
-    <channel update="i" site="mncvision.id.E" site_id="49" xmltv_id="Nickelodeon.COCO">Nickelodeon</channel>
-    <channel update="i" site="mncvision.id.E" site_id="78" xmltv_id="Indosiar.COCO">Indosiar</channel>
-    <channel update="i" site="mncvision.id.E" site_id="80" xmltv_id="RCTI.COCO">RCTI</channel>
-    <channel update="i" site="mncvision.id.E" site_id="81" xmltv_id="GTV.COCO">GTV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="82" xmltv_id="MNCTV.COCO">MNCTV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="83" xmltv_id="iNews.COCO">iNews</channel>
-    <channel update="i" site="mncvision.id.E" site_id="87" xmltv_id="Trans TV.COCO">Trans TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="89" xmltv_id="SCTV.COCO">SCTV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="97" xmltv_id="tvOne.COCO">tvOne</channel>
-    <channel update="i" site="mncvision.id.E" site_id="102" xmltv_id="MNC Sports.COCO">MNC Sports</channel>
-    <channel update="i" site="mncvision.id.E" site_id="103" xmltv_id="Berita Satu.COCO">Berita Satu</channel>
-    <channel update="i" site="mncvision.id.E" site_id="105" xmltv_id="Tawaf TV.COCO">Tawaf TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="106" xmltv_id="Kompas TV.COCO">Kompas TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="107" xmltv_id="Metro TV.COCO">Metro TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="110" xmltv_id="Trans 7.COCO">Trans 7</channel>
-    <channel update="i" site="mncvision.id.E" site_id="113" xmltv_id="JAKTV.COCO">JAKTV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="115" xmltv_id="ANTV.COCO">ANTV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="116" xmltv_id="NET TV.COCO">NET TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="118" xmltv_id="TVRI.COCO">TVRI</channel>
-    <channel update="i" site="mncvision.id.E" site_id="154" xmltv_id="AXN.COCO">AXN</channel>
-    <channel update="i" site="mncvision.id.E" site_id="157" xmltv_id="Animax.COCO">Animax</channel>
-    <channel update="i" site="mncvision.id.E" site_id="163" xmltv_id="Warner TV.COCO">Warner TV</channel>
-    <channel update="i" site="mncvision.id.E" site_id="201" xmltv_id="Discovery Channel.COCO">Discovery Channel</channel>
-    <channel update="i" site="mncvision.id.E" site_id="202" xmltv_id="National Geographic Channel.COCO">National Geographic Channel</channel>
-    <channel update="i" site="mncvision.id.E" site_id="204" xmltv_id="National Geographic Wild.COCO">National Geographic Wild</channel>
-    <channel update="i" site="mncvision.id.E" site_id="206" xmltv_id="History.COCO">History</channel>
   </channels>
 </site>
