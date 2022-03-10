@@ -1,4 +1,4 @@
-// npx epg-grabber --config=Vidio.com/vidio.com.config.js --channels=Vidio.com/vidio.com_id.channels.xml --output=vidio.com.epg.xml --days=2
+// npx epg-grabber --config=Vidio.com/vidio.com.config.js --channels=Vidio.com/vidio.com_id.channels.xml --output=Vidio.com/vidio.com.epg.xml --days=2
 
 const { parser, url } = require('./vidio.com.config.js')
 const dayjs = require('dayjs')
