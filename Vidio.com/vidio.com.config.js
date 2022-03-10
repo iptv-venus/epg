@@ -1,71 +1,47 @@
-const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
-
-module.exports = {
-  site: 'vidio.com',
-  url({ channel }) {
-    return `https://www.vidio.com/live/${channel.site_id}/schedules`
-  },
-  parser({ content, date }) {
-    const programs = []
-    const items = parseItems(content, date)
-    items.forEach(item => {
-      const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
-      let start = parseStart($item, date)
-      if (prev && start.isBefore(prev.start)) {
-        start = start.add(1, 'd')
-        date = date.add(1, 'd')
-      }
-      let stop = parseStop($item, date)
-      if (stop.isBefore(start)) {
-        stop = stop.add(1, 'd')
-        date = date.add(1, 'd')
-      }
-      programs.push({
-        title: parseTitle($item),
-        start,
-        stop
-      })
-    })
-
-    return programs
-  }
-}
-
-function parseStart($item, date) {
-  const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
-  const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
-  const dateString = `${date.format('YYYY-MM-DD')} ${start}`
-
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
-}
-
-function parseStop($item, date) {
-  const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
-  const [_, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
-  const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
-
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
-}
-
-function parseTitle($item) {
-  return $item('div.b-livestreaming-daily-schedule__item-content-title').text()
-}
-
-function parseItems(content, date) {
-  const $ = cheerio.load(content)
-
-  return $(
-    `#schedule-content-${date.format(
-      'YYYYMMDD'
-    )} > .b-livestreaming-daily-schedule__scroll-container .b-livestreaming-daily-schedule__item`
-  ).toArray()
-}
+<?xml version="1.0"?>
+<settings>
+   
+  <!-- for detailed info about the settings see http://webgrabplus.com/documentation/configuration/webgrabconfigxml 
+  and http://webgrabplus.com/sites/default/files/downloads/Misc/Documented_Configuration_Files.zip -->
+   
+  <filename>guide.xml</filename>
+  <mode></mode>
+  <postprocess grab="y" run="n">rex</postprocess>
+  <user-agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36</user-agent>
+  <!--<decryptkey site="site-name">decrypt_userkey</decryptkey>-->
+  <!--<license wg-username="Notnowi" registered-email="bydimz00@gmail.com" password="Haryanto87" />-->
+  <logging>on</logging>
+  <retry time-out="5">4</retry>
+  <timespan>6</timespan>
+  <update>f</update>
+ 
+  <!--
+            Replace the next dummy channel entry with the channels you want.
+			You can look into the installed siteini.pack folder on your computer
+  
+            For the latest version,
+            see http://webgrabplus.com/epg-channels for the available sites/channels
+  -->
+  
+    <channel update="i" site="vidio.com" site_id="6711" xmltv_id="MyTV.COCO">MyTV</channel>
+    <channel update="i" site="vidio.com" site_id="7432" xmltv_id="Nusantara TV.COCO">Nusantara TV</channel>
+    <channel update="i" site="vidio.com" site_id="6482" xmltv_id="DAAI TV.COCO">DAAI TV</channel>
+    <channel update="i" site="vidio.com" site_id="8556" xmltv_id="Pet TV.COCO">Pet TV</channel>
+    <channel update="i" site="vidio.com" site_id="8558" xmltv_id="Citra Culinary &amp; Travel.COCO">Citra Culinary &amp; Travel</channel>
+    <channel update="i" site="vidio.com" site_id="6684" xmltv_id="Citra Bioskop.COCO">Citra Bioskop</channel>
+    <channel update="i" site="vidio.com" site_id="6401" xmltv_id="Citra Drama.COCO">Citra Drama</channel>
+    <channel update="i" site="vidio.com" site_id="6587" xmltv_id="Citra Dangdut.COCO">Citra Dangdut</channel>
+    <channel update="i" site="vidio.com" site_id="6402" xmltv_id="Citra Entertainment.COCO">Citra Entertainment</channel>
+    <channel update="i" site="vidio.com" site_id="8237" xmltv_id="Mentari TV.COCO">Mentari TV</channel>
+    <channel update="i" site="useetv.com" site_id="dunialain" xmltv_id="Dunia Lain.COCO">Dunia Lain</channel>
+    <channel update="i" site="useetv.com" site_id="paramount" xmltv_id="Paramount.COCO">Paramount</channel>
+    <channel update="i" site="useetv.com" site_id="myfamily" xmltv_id="My Family.COCO">My Family</channel>
+    <channel update="i" site="useetv.com" site_id="mycinemaasia" xmltv_id="My Cinema Asia.COCO">My Cinema Asia</channel>
+    <channel update="i" site="useetv.com" site_id="mycinema" xmltv_id="My Cinema.COCO">My Cinema</channel>
+    <channel update="i" site="useetv.com" site_id="bioskopindonesia" xmltv_id="Bioskop Indonesia.COCO">Bioskop Indonesia</channel>
+    <channel update="i" site="useetv.com" site_id="eatgo" xmltv_id="Eat &amp; Go.COCO">Eat &amp; Go</channel>
+    <channel update="i" site="useetv.com" site_id="flik" xmltv_id="Flik.COCO">Flik</channel>
+    <channel update="i" site="useetv.com" site_id="aniplus" xmltv_id="Aniplus.COCO">ANIPlus</channel>
+    <channel update="i" site="useetv.com" site_id="dreamworks" xmltv_id="Dreamworks.COCO">Dreamworks</channel>
+    <channel update="i" site="useetv.com" site_id="starchinesemovies" xmltv_id="Star Chinese Movies.COCO">Star Chinese Movies</channel>
+</settings>
